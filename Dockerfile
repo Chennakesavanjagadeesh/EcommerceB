@@ -4,4 +4,4 @@ RUN mvn clean package -DskipTests
 FROM  openjdk:17-jdk-slim
 COPY --from=build/target/E-Commmerce Strore App-0.0.1-SNAPSHOT.jar
 EXPOSE 8080
-ENTRYPOINT [ "java","-jar","E-Commmerce Strore App.jar" ]
+ENTRYPOINT [ "java","-jar","e-commmerce strore App.jar" ]
