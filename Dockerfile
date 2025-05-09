@@ -5,6 +5,6 @@ RUN mvn clean package -DskipTests
 
 # Stage 2: Run
 FROM openjdk:17-jdk-slim
-COPY --from=build target/e-commerce-store-app-0.0.1-SNAPSHOT.jar e-commerce-store-app.jar
+COPY --from=build target/E-Commerce-Store-App-0.0.1-SNAPSHOT.jar E-Commerce-Store-App.jar
 EXPOSE 8080
-ENTRYPOINT ["java", "-jar", "e-commerce-store-app"]
+ENTRYPOINT ["java", "-jar", "E-Commerce-Store-App"]
