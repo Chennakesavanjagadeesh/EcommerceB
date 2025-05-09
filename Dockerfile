@@ -5,6 +5,6 @@ RUN mvn clean package -DskipTests
 
 # Stage 2: Run
 FROM openjdk:17-jdk-slim
-COPY --from=build target/ecommerce-0.0.1-SNAPSHOT.jar ecommerce.jar
+COPY --from=build target/E-Commerce-Strore-App-0.0.1-SNAPSHOT.jar E-Commerce-Strore-App.jar
 EXPOSE 8080
-ENTRYPOINT ["java", "-jar", "ecommerce.jar"]
+ENTRYPOINT ["java", "-jar", "E-Commerce-Strore-App.jar"]
