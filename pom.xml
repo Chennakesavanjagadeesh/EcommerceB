@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example.SpringProjectCrud</groupId>
-	<artifactId>E-Commerce-Strore-App</artifactId>
+	<artifactId>Ecommerce</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>E-Commerce-Strore-App</name>
-	<description>It is  a online platform of e-commerce</description>
+	<name>Ecommerce</name>
+	<description>It is  a online platform of ecommerce</description>
 	<url/>
 	<licenses>
 		<license/>
@@ -67,12 +67,14 @@
 	</dependencies>
 
 	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-		</plugins>
-	</build>
+    <finalName>ecommerce</finalName> <!-- Add this line -->
+    <plugins>
+        <plugin>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-maven-plugin</artifactId>
+        </plugin>
+    </plugins>
+</build>
+
 
 </project>
